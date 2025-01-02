@@ -1,0 +1,19 @@
+body {
+  background-color: #FFF8E1;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 600px) {
+    .MuiTypography-h3 {
+      font-size: 2rem !important;
+    }
+
+    .MuiTypography-h4 {
+      font-size: 1.5rem !important;
+    }
+
+    .MuiTypography-h5 {
+      font-size: 1.2rem !important;
+    }
+  }
+}
