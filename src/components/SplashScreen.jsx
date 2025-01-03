@@ -50,24 +50,14 @@ const SplashContainer = styled(Box)(() => ({
     zIndex: 9999,
     animation: `${fadeOut} 0.5s ease-in-out forwards`,
     animationDelay: '3s',
-    '&::before': {
-        content: '""',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.1)',
-        zIndex: -1,
-    }
 }));
 
 const NameText = styled(Typography)(() => ({
-    color: '#f7f7f7',
-    fontSize: '8rem',
+    color: '#fde507',
+    fontSize: '12rem',
     textAlign: 'center',
     fontFamily: 'SolidDice',
-    textShadow: '3px 3px 5px rgba(0,0,0,0.7)',
+    textShadow: '1px 1px 4px rgb(0, 0, 0)',
     animation: `${bounceIn} 1s ease-out`,
     display: 'flex',
     flexDirection: 'column',
@@ -85,7 +75,6 @@ function SplashScreen() {
                 Liam <br />
                 Mateo
             </NameText>
-            
         </SplashContainer>
     );
 }
