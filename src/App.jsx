@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, CssBaseline } from '@mui/material';
 import Header from './components/Header';
@@ -7,6 +7,7 @@ import Location from './components/Location';
 import AttendanceForm from './components/AttendanceForm';
 import SplashScreen from './components/SplashScreen';
 import { styled } from '@mui/material/styles';
+import './styles/styles.css';
 // Tema personalizado con colores de Winnie Pooh
 const theme = createTheme({
   palette: {
@@ -45,7 +46,7 @@ function App() {
       <CssBaseline />
       {isLoading && <SplashScreen />}
       <MainContent isLoading={isLoading}>
-        <Container maxWidth="md">
+        <Container maxWidth="md" className="my-background">
           <Header />
           <Invitation />
           <Location />
