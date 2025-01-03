@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 
 const FormPaper = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(3),
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(0),
     backgroundColor: '#FFF8E1',
     border: '2px solid #FFC107',
     borderRadius: '15px',

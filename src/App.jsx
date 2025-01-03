@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, CssBaseline } from '@mui/material';
+import { Container, CssBaseline, Box } from '@mui/material';
 import Header from './components/Header';
 import Invitation from './components/Invitation';
 import Location from './components/Location';
@@ -45,8 +45,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       {isLoading && <SplashScreen />}
-      <MainContent isLoading={isLoading}>
-        <Container maxWidth="md" className="my-background">
+      <MainContent isLoading={isLoading} className="my-background">
+        <Container maxWidth="md">
+          <Box sx={{padding: 1}}/>
           <Header />
           <Invitation />
           <Location />

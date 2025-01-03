@@ -1,12 +1,16 @@
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 const HeaderContainer = styled(Box)(({ theme }) => ({
     textAlign: 'center',
-    padding: theme.spacing(4),
-    marginBottom: theme.spacing(3),
-    backgroundImage: 'linear-gradient(to bottom, #FFC107, #FFE082)',
-    borderRadius: '0 0 20px 20px',
+    padding: theme.spacing(10),
+    marginBottom: theme.spacing(2),
+    backgroundImage: `url('../src/assets/header.png')`,
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    position: 'relative',
+    //backgroundImage: 'linear-gradient(to bottom, #FFC107, #FFE082)',
+    //borderRadius: '0 0 20px 20px',
 }));
 function Header() {
     return (

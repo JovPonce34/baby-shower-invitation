@@ -64,7 +64,7 @@ const SplashContainer = styled(Box)(() => ({
 
 const NameText = styled(Typography)(() => ({
     color: '#f7f7f7',
-    fontSize: '6rem',
+    fontSize: '8rem',
     textAlign: 'center',
     fontFamily: 'SolidDice',
     textShadow: '3px 3px 5px rgba(0,0,0,0.7)',
