@@ -1,8 +1,31 @@
 /* styles.css */
 .my-background {
-  background: linear-gradient(90deg, transparent 50%, #13c7f0 50%),linear-gradient(to bottom, transparent 50%, #4ecbe680 50%);
+  background: linear-gradient(90deg, transparent 50%, #5ecfe9 50%),linear-gradient(to bottom, transparent 50%, #8ee0f3e0 50%);
   background-size: 2em 2em;
   background-color: #75f4ff;
   opacity: 0.8
 }
-  
+
+.dancing-script-encabezado {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-header {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 5rem;
+  color: aliceblue;
+  text-shadow: rgb(15, 218, 233) 1px 0 10px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+@media (max-width: 600px) {
+  .dancing-script-header {
+    font-size: 3rem;
+  }
+}

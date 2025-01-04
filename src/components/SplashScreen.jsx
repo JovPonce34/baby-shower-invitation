@@ -54,7 +54,7 @@ const SplashContainer = styled(Box)(() => ({
 
 const NameText = styled(Typography)(() => ({
     color: '#fde507',
-    fontSize: '12rem',
+    fontSize: '8rem',
     textAlign: 'center',
     fontFamily: 'SolidDice',
     textShadow: '1px 1px 4px rgb(0, 0, 0)',
@@ -64,7 +64,7 @@ const NameText = styled(Typography)(() => ({
     alignItems: 'center',
     gap: '1rem',
     '@media (max-width: 600px)': {
-        fontSize: '2.5rem',
+        fontSize: '5rem',
     },
 }));
 
