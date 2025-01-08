@@ -71,6 +71,15 @@ const NameText = styled(Typography)(() => ({
 function SplashScreen() {
     return (
         <SplashContainer>
+            <Box className='dancing-script-encabezado' sx={{
+                position: 'absolute',
+                top: '10%',
+                left: '40%',
+                transform: 'translateX(-40%)',
+                zIndex: 1
+            }}>
+                Un nuevo rayito de sol llega a nuestras vidas...
+            </Box>
             <NameText variant="h1">
                 Liam <br />
                 Mateo

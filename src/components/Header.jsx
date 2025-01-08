@@ -4,8 +4,9 @@ import backgroundImage from '../assets/header.png';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
     padding: theme.spacing(10),
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(1),
     backgroundImage: `url(${backgroundImage})`,
+    filter: 'drop-shadow(0px 4px 8px rgba(14, 13, 12, 0.411))',
     backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -15,7 +16,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
 function Header() {
     return (
         <HeaderContainer>
-            <div className='dancing-script-header'>Baby Shower</div> 
+            <Box className='dancing-script-header'>Baby Shower</Box> 
         </HeaderContainer>
     );
 }

@@ -1,19 +1,5 @@
 body {
-  background-color: #FFF8E1;
-  margin: 0;
-  padding: 0;
-
-  @media (max-width: 600px) {
-    .MuiTypography-h3 {
-      font-size: 2rem !important;
-    }
-
-    .MuiTypography-h4 {
-      font-size: 1.5rem !important;
-    }
-
-    .MuiTypography-h5 {
-      font-size: 1.2rem !important;
-    }
-  }
+  background: linear-gradient(90deg, transparent 50%, #7addf3 50%),linear-gradient(to bottom, transparent 50%, #1db7dae0 50%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
 }

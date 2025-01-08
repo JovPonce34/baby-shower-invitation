@@ -1,40 +1,48 @@
 /* styles.css */
 .my-background {
-  background: linear-gradient(90deg, transparent 50%, #5ecfe9 50%),linear-gradient(to bottom, transparent 50%, #8ee0f3e0 50%);
-  background-size: 2em 2em;
-  background-color: #75f4ff;
-  opacity: 0.8
+ 
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
 }
 
 .dancing-script-encabezado {
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 35px;
+}
+
+.allura-regular {
+  font-family: "Allura", serif;
+  font-weight: 400;
   font-style: normal;
-}
-
-.dancing-script-header {
-  font-family: "Dancing Script", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-size: 5rem;
-  color: aliceblue;
-  text-shadow: rgb(15, 218, 233) 1px 0 10px;
-  text-align: center;
-  margin-top: 20%;
-}
-
-@media (max-width: 600px) {
-  .dancing-script-header {
-    font-size: 3rem;
-  }
+  font-size: 4rem;
 }
 
 .great-vibes-regular {
   font-family: "Great Vibes", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 25px;
 }
+
+.dancing-script-header {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 6rem;
+  color: rgb(243, 255, 255);
+  text-shadow: rgb(4, 60, 163) 2px 2px 2px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .dancing-script-header {
+    font-size: 35px;
+  }
+}
+
+
 
 .lora {
   font-family: "Lora", serif;
@@ -57,8 +65,3 @@
   font-style: normal;
 }
 
-.allura-regular {
-  font-family: "Allura", serif;
-  font-weight: 400;
-  font-style: normal;
-}

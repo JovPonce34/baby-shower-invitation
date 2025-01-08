@@ -3,8 +3,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, CssBaseline, Box } from '@mui/material';
 import Header from './components/Header';
 import Invitation from './components/Invitation';
-import Location from './components/Location';
-import AttendanceForm from './components/AttendanceForm';
+//import Location from './components/Location';
+//import AttendanceForm from './components/AttendanceForm';
 import SplashScreen from './components/SplashScreen';
 import { styled } from '@mui/material/styles';
 import './styles/styles.css';
@@ -19,7 +19,7 @@ const theme = createTheme({
       main: '#D32F2F', // Rojo de la camiseta
     },
     background: {
-      default: '#FFF8E1', // Fondo crema suave
+      default: '#ffffff', // Fondo crema suave
     },
   },
   typography: {
@@ -50,8 +50,7 @@ function App() {
           <Box sx={{padding: 1}}/>
           <Header />
           <Invitation />
-          <Location />
-          <AttendanceForm />
+          <Box sx={{padding: 1}}/>
         </Container>
       </MainContent>
     </ThemeProvider>
