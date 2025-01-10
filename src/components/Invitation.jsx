@@ -11,11 +11,11 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
     
     border: '1px solid #FFC107',
     borderRadius: '15px',
-    backgroundColor: 'rgba(255, 248, 225, .9)',
-    backgroundBlendMode: 'color',
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: '120%',
-    backgroundPosition: 'center',
+    backgroundColor: 'rgba(255, 248, 225, .7)',
+    //backgroundBlendMode: 'lighten',
+    //backgroundImage: `url(${backgroundImage})`,
+    //backgroundSize: '120%',
+    //backgroundPosition: 'center',
 }));
 
 function Invitation() {
@@ -25,7 +25,7 @@ function Invitation() {
     return (
         <StyledPaper elevation={1}>
             
-            <Box sx={{my:1}} className='lora'>
+            <Box sx={{my:1, fontSize: '20px'}} className='lora'>
                 Con mucha emoción, les invitamos a celebrar la llegada de nuestro pequeño tesoro.
             </Box>
 
@@ -33,7 +33,7 @@ function Invitation() {
                 Liam Mateo
             </Box>
             
-            <Box sx={{my:1}} className='lora'>
+            <Box sx={{my:1, fontSize: '20px'}} className='lora'>
                 El amor está por nacer y queremos compartirlo con ustedes. Acompáñanos a celebrar este maravilloso momento en el que la vida se llena de nuevas ilusiones y sonrisas.
             </Box>
             
@@ -54,7 +54,7 @@ function Invitation() {
                     Ver ubicación
                 </Button>
             </Box>
-            <Box sx={{my:3}} className='lora'>
+            <Box sx={{my:3, fontSize: '20px'}} className='lora'>
                 Tu presencia será el mejor regalo para nosotros y para el bebé. ¡Esperamos verte y compartir juntos este día tan especial!
             </Box>
             <Modal

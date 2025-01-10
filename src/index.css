@@ -1,5 +1,10 @@
 body {
-  background: linear-gradient(90deg, transparent 50%, #7addf3 50%),linear-gradient(to bottom, transparent 50%, #1db7dae0 50%);
-  background-size: 1em 1em;
-  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('./assets/fondorosa3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;  
 }
