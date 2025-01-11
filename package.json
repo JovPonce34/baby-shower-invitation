@@ -1,5 +1,5 @@
 {
-  "homepage":"https://JovPonce34.github.io/baby-shower-invitation",
+  "homepage": "https://JovPonce34.github.io/baby-shower-invitation",
   "name": "baby-shower-invitation",
   "private": true,
   "version": "0.0.0",
@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.1",
+    "framer-motion": "^11.16.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
