@@ -33,7 +33,7 @@ function Location() {
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 4 , mt: 2}}>
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!4v1736305331850!6m8!1m7!1s8LycrBJ_DjC7olG_S-Kzbw!2m2!1d19.5921160093643!2d-98.91029109643195!3f298.4548304269731!4f-6.625438763151934!5f0.7820865974627469" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.822698147725!2d-98.91272472603423!3d19.592095235570433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e92429252967%3A0x5941cf3cca3dc87e!2sCalle%20Francisco%20Javier%20Mina%201055%2C%20Tezoyuca%2C%2056006%20Tezoyuca%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!" 
                     width="auto" 
                     height="400px" 
                     style={{border: 0}} 

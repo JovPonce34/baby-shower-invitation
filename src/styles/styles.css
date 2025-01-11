@@ -20,18 +20,19 @@
 }
 
 .dancing-script-header {
+  position: relative;
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 6rem;
   color: rgb(243, 255, 255);
-  text-shadow: rgb(4, 60, 163) 2px 2px 2px;
+  text-shadow: rgba(5, 26, 66, 0.815) 3px 3px 3px;
   text-align: center;
 }
 
 @media (max-width: 600px) {
   .dancing-script-header {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 
@@ -58,3 +59,12 @@
   font-style: normal;
 }
 
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(0px 4px 8px rgba(14, 13, 12, 0.411));
+}

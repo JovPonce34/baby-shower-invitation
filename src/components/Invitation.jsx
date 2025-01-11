@@ -4,6 +4,7 @@ import { Paper, Box, Button, Modal } from '@mui/material';
 import { styled } from '@mui/material/styles';
 //import backgroundImage from '../assets/bee.png';
 import Location from './Location';
+import Actividades from './Actividades';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(2),
@@ -80,8 +81,11 @@ const dateVariants = {
 
 function Invitation() {
     const [openModal, setOpenModal] = useState(false);
+    const [openModalActividades, setOpenModalActividades] = useState(false);
     const handleOpen = () => setOpenModal(true);
     const handleClose = () => setOpenModal(false);
+    const handleOpenActividades = () => setOpenModalActividades(true);
+    const handleCloseActividades = () => setOpenModalActividades(false);
 
     return (
         <StyledPaper elevation={1}>
@@ -112,7 +116,7 @@ function Invitation() {
                 transition={{ delay: 0.3 }}
             >
                 <Box sx={{my:1, fontSize: '20px'}} className='lora'>
-                    El amor está por nacer y queremos compartirlo con ustedes. Acompáñanos a celebrar este maravilloso momento en el que la vida se llena de nuevas ilusiones y sonrisas.
+                    Acompáñanos a celebrar este maravilloso momento en el que la vida se llena de nuevas ilusiones y sonrisas.
                 </Box>
             </motion.div>
             
@@ -157,10 +161,31 @@ function Invitation() {
                 transition={{ delay: 4.1 }}
             >
                 <Box sx={{my:3, fontSize: '20px'}} className='lora'>
-                    Tu presencia será el mejor regalo para nosotros y para el bebé. ¡Esperamos verte y compartir juntos este día tan especial!
+                    Tu presencia será el mejor regalo para nosotros. ¡Esperamos verte y compartir juntos este día tan especial!
                 </Box>
             </motion.div>
 
+            <Box sx={{my:1}} className='nunito'>
+                <Button 
+                    variant="contained" 
+                    color="primary" 
+                    sx={{textTransform: 'none'}}
+                    onClick={handleOpenActividades}
+                    component={motion.button}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    Horarios y Actividades
+                </Button>
+            </Box>
+            <Modal
+                open={openModalActividades}
+                onClose={handleCloseActividades}
+                aria-labelledby="modal-ubicacion"
+                aria-describedby="modal-descripcion-ubicacion"
+            >
+                <Actividades />
+            </Modal>
             <Modal
                 open={openModal}
                 onClose={handleClose}
