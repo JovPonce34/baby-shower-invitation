@@ -28,7 +28,7 @@ function Location() {
                     Ubicación
                 </Typography>
             </Box>
-            <Typography variant="body1" align="center" paragraph>
+            <Typography variant="body1" align="center" sx={{ ml: 2, mr: 2 }}>
                 Francisco Javier Mina No. 1051 Tezoyuca Estado de México
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 4 , mt: 2}}>

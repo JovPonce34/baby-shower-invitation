@@ -2,6 +2,10 @@ import { Paper, Typography, Box } from '@mui/material';
 import BallotOutlinedIcon from '@mui/icons-material/BallotOutlined';
 import { styled } from '@mui/material/styles';
 import backgroundImage from '../assets/bee.png';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
 
 const LocationPaper = styled(Paper)(() => ({
     position: 'absolute',
@@ -28,12 +32,80 @@ function Actividades() {
                     Programa del Evento
                 </Typography>
             </Box>
-            <Box sx={{p:2}}>
-                <Box sx={{my:1, fontSize: '20px' }} className='lora'>4:00 PM - Recepción y bienvenida</Box>
-                <Box sx={{my:1, fontSize: '20px'}} className='lora'>4:30 PM - Actividades Baby Shower</Box>
-                <Box sx={{my:1, fontSize: '20px'}} className='lora'>7:00 PM - Cena</Box>
-                <Box sx={{my:1, fontSize: '20px'}} className='lora'>9:00 PM - Baile</Box>
-            </Box>
+            <List sx={{ width: '100%', maxWidth: 360, ml:1 }}>
+                <ListItem alignItems="flex-start">
+                    <ListItemText
+                    primary="4:00 PM"
+                    secondary={
+                        <>
+                            <Typography
+                                component="span"
+                                variant="body2"
+                                sx={{ color: 'text.primary', display: 'inline' }}
+                            >
+                                🥂 Recepción y Bienvenida:
+                            </Typography>
+                        {" — Lleguen con sus mejores sonrisas y prepárense para la fiesta. ¡Habrá sorpresas desde el inicio!"}
+                        </>
+                    }
+                    />
+                </ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem alignItems="flex-start">
+                    <ListItemText
+                    primary="4:30 PM"
+                    secondary={
+                        <>
+                            <Typography
+                                component="span"
+                                variant="body2"
+                                sx={{ color: 'text.primary', display: 'inline' }}
+                            >
+                                🎲 Juegos y Diversión:
+                            </Typography>
+                        {" — Risas aseguradas con los juegos más locos y retos sorpresivos. ¡No querrás perderlos!"}
+                        </>
+                    }
+                    />
+                </ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem alignItems="flex-start">
+                    <ListItemText
+                    primary="7:00 PM"
+                    secondary={
+                        <>
+                            <Typography
+                                component="span"
+                                variant="body2"
+                                sx={{ color: 'text.primary', display: 'inline' }}
+                            >
+                                🍴 Hora de la Cena:
+                            </Typography>
+                        {" — Prepárate para disfrutar de una deliciosa comida con mucho amor y sazón."}
+                        </>
+                    }
+                    />
+                </ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem alignItems="flex-start">
+                    <ListItemText
+                    primary="9:00 PM"
+                    secondary={
+                        <>
+                            <Typography
+                                component="span"
+                                variant="body2"
+                                sx={{ color: 'text.primary', display: 'inline' }}
+                            >
+                                🕺 Baile y Fiesta:
+                            </Typography>
+                        {" — ¡Movamos el cuerpo y celebramos al ritmo de la música!"}
+                        </>
+                    }
+                    />
+                </ListItem>
+                <Divider variant="inset" component="li" />
+            </List>
             
         </LocationPaper>
     );

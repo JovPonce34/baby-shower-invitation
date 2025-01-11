@@ -127,7 +127,7 @@ function Invitation() {
             >
                 <Box sx={{my:1}}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', gap: 3 }}>
-                        <div className='raleway' style={{ fontSize: '20px', display: 'flex', alignItems: 'center' }}>Febreo</div>
+                        <div className='raleway' style={{ fontSize: '20px', display: 'flex', alignItems: 'center' }}>Febrero</div>
                         <div className='allura-regular' style={{ fontSize: '55px' }}>15</div>
                         <div className='raleway' style={{ fontSize: '20px', display: 'flex', alignItems: 'center' }}>4:00 PM</div>
                     </Box>
