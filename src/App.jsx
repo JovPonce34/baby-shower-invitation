@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3500); // 3.5 segundos para asegurar que la animación de fadeOut termine
+    }, 5500); // 3.5 segundos para asegurar que la animación de fadeOut termine
     return () => clearTimeout(timer);
   }, []);
   return (

@@ -49,7 +49,7 @@ const SplashContainer = styled(Box)(() => ({
     alignItems: 'center',
     zIndex: 9999,
     animation: `${fadeOut} 0.5s ease-in-out forwards`,
-    animationDelay: '3s',
+    animationDelay: '5s',
 }));
 
 const NameText = styled(Typography)(() => ({
@@ -58,7 +58,9 @@ const NameText = styled(Typography)(() => ({
     textAlign: 'center',
     fontFamily: 'SolidDice',
     textShadow: '1px 1px 4px rgb(0, 0, 0)',
-    animation: `${bounceIn} 1s ease-out`,
+    animation: `${bounceIn} 3s ease-out`,
+    animationDelay: '2s',
+    opacity: 0,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
