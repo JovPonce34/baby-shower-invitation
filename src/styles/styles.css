@@ -1,3 +1,10 @@
+/* styles.css */
+.my-background {
+  background-image: url('../assets/fondorosa3.jpg');
+  background-position: center;
+  background-size: auto 100%;  
+}
+
 .dancing-script-encabezado {
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
@@ -33,6 +40,9 @@
 @media (max-width: 600px) {
   .dancing-script-header {
     font-size: 40px;
+  }
+  .my-background {
+    background-repeat: no-repeat;
   }
 }
 

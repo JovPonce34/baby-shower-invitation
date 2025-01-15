@@ -29,7 +29,7 @@ const textVariants = {
         transition: { 
             duration: 1,
             ease: "easeOut",
-            delay: 6.0
+            delay: 8.0
         }
     }
 };
@@ -74,7 +74,7 @@ const dateVariants = {
             duration: 1,
             type: "spring",
             stiffness: 120,
-            delay: 6.6
+            delay: 8.6
         }
     }
 };

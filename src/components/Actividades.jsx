@@ -32,7 +32,7 @@ function Actividades() {
                     Programa del Evento
                 </Typography>
             </Box>
-            <List sx={{ width: '100%', maxWidth: 360, ml:1 }}>
+            <List sx={{ width: '100%', ml:1 }}>
                 <ListItem alignItems="flex-start">
                     <ListItemText
                     primary="4:00 PM"

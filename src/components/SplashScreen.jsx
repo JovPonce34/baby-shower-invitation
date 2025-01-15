@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { keyframes } from '@mui/system';
 import { styled } from '@mui/material/styles';
 import backgroundImage from '../assets/fondo.png';
+import { ReactTyped } from "react-typed";
 
 const bounceIn = keyframes`
  0% {
@@ -48,8 +49,8 @@ const SplashContainer = styled(Box)(() => ({
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 9999,
-    animation: `${fadeOut} 0.5s ease-in-out forwards`,
-    animationDelay: '5s',
+    animation: `${fadeOut} 2s ease-in-out forwards`,
+    animationDelay: '8s',
 }));
 
 const NameText = styled(Typography)(() => ({
@@ -59,7 +60,7 @@ const NameText = styled(Typography)(() => ({
     fontFamily: 'SolidDice',
     textShadow: '1px 1px 4px rgb(0, 0, 0)',
     animation: `${bounceIn} 3s ease-out`,
-    animationDelay: '2s',
+    animationDelay: '5s',
     opacity: 0,
     display: 'flex',
     flexDirection: 'column',
@@ -80,7 +81,7 @@ function SplashScreen() {
                 transform: 'translateX(-40%)',
                 zIndex: 1
             }}>
-                Un nuevo rayito de sol llega a nuestras vidas...
+              <ReactTyped strings={["Un nuevo rayito de sol llega a nuestras vidas..."]} typeSpeed={80} />
             </Box>
             <NameText variant="h1">
                 Liam <br />

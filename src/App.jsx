@@ -29,7 +29,7 @@ const theme = createTheme({
 
 const MainContent = styled('div')(({ isLoading }) => ({
   opacity: isLoading ? 0 : 1,
-  transition: 'opacity 0.5s ease-in-out',
+  transition: 'opacity .5s ease-in-out',
   visibility: isLoading ? 'hidden' : 'visible',
 }));
 
@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5500); // 3.5 segundos para asegurar que la animación de fadeOut termine
+    }, 7500); // 3.5 segundos para asegurar que la animación de fadeOut termine
     return () => clearTimeout(timer);
   }, []);
   return (
