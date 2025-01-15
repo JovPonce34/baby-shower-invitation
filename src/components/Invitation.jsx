@@ -95,7 +95,7 @@ function Invitation() {
                 variants={textVariants}
             >
                 <Box sx={{my:1, fontSize: '20px'}} className='lora'>
-                    Con mucha emoción, les invitamos a celebrar la llegada de nuestro pequeño tesoro.
+                    Con mucha emoción, los invitamos a celebrar la llegada de nuestro pequeño tesoro.
                 </Box>
             </motion.div>
 
